@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function createAmzDate() {
-  return new Date().toISOString().replace(/[:-]|\.\d{3}/g, "");
-}
-
 const Currency = () => {
   const [currency, setCurrency] = useState(null);
   console.log("🚀 ~ file: Currency.js:10 ~ Currency ~ currency:", currency);
