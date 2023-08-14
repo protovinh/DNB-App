@@ -8,7 +8,7 @@ const Currency = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/currencies");
+        const response = await axios.get("https://us-central1-bold-gravity-395018.cloudfunctions.net/DNB-BACKEND-APPLICATION/currencies");
         setCurrency(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
